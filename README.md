@@ -50,7 +50,7 @@ Result: Correlation between Human Mobility and CO<sub>2</sub> Emissions - Code E
 * **node** - Results of `calculatie node features.ipynb`, with the summary available in `node features.csv`.
 
 ## 4. Prediction
-Utilizing Strategy 1 and Strategy 2 to predict CO<sub>2</sub> emissions. For detailed information, please refer to the paper.
+Utilize Strategy 1 and Strategy 2 to predict CO<sub>2</sub> emissions. For detailed information, please refer to the paper.
 * **`LGBM-strategy1.ipynb`** and **`LGBM-strategy2.ipynb`** - The respective code for Strategy 1 and Strategy 2.
 * **`res_lgbm_s1.csv`** and **`res_lgbm_s2.csv`** - The respective prediction result of `LGBM-strategy1.ipynb` and `LGBM-strategy2.ipynb`.
 * **`plot the predicted result.ipynb`** - Code for Fig. 2: analyze the relations between the predicted CO2 emissions and observed CO<sub>2</sub> emissions for each strategy.
