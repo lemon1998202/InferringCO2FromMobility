@@ -27,11 +27,10 @@ Python packages versions are specified as follows:
 
 ## 1. CO<sub>2</sub> emissions data
 This dataset is sourced from the Global Gridded Daily CO2 Emissions Dataset (GRACED), accessible at https://carbonmonitor-graced.com/. This dataset supports the work in Scientific Data 7, 392 (2020), Nature Communication 11, 5172 (2020), The Innovation, 2022, 3(1) and Scientific Data 10, 69 (2023). GRACED has been processed to derive daily CO2 emission within distinct regional boundaries. [这里不同国家的区域划分单位请确认]
-* **China** - Daily CO<sub>2</sub> emission for various cities in China from January 1, 2020, to February 29, 2020.
-* **Italy** - Daily CO<sub>2</sub> emission for various cities in Italy from January 1, 2020, to June 30, 2020.
-* **Mexico** - Daily CO<sub>2</sub> emission for various cities in Mexico in the year 2020.
-* **USA-County** - Daily CO<sub>2</sub> emission for various counties in the United States from January 1, 2020, to February 29, 2020.
-* **USA-State** - Daily CO<sub>2</sub> emission for various states in the United States from January 1, 2020, to February 29, 2020.
+* **China** - Mobility data of China: Collected between January 1 to February 29, 2020, this dataset is aggregated at the city level.
+* **Italy** - Mobility data of Italy: Encompassing the period from January 18 to June 26, 2020, this dataset captures aggregated origin-destination movements between various Italian provinces.
+* **Mexico** - Depicting travel patterns between municipalities in Mexico, this dataset covers the period from January 1 to December 31, 2020.
+* **USA-County** and **USA-State**- Mobility data of the U.S.: Covering the span from January 1 to February 15, 2020, this datasets provide valuable insights into population movement patterns at three geographical scales: census tract, county, and state.
 
 ## 2. Mobility data
 Mobility data for China, Italy, Mexico, and the United States.
@@ -51,7 +50,7 @@ Result: Correlation between Human Mobility and CO<sub>2</sub> Emissions - Code E
 * **node** - Results of `calculatie node features.ipynb`, with the summary available in `node features.csv`.
 
 ## 4. Prediction
-Utilizing different strategies to predict carbon emissions with network features, population data and latitude-longitude features.[这里的特征名称需要确认一下]
+Utilizing Strategy 1 and Strategy 2 to predict CO<sub>2</sub> emissions. For detailed information about the models and features, please refer to the main text.
 * **`LGBM-strategy1.ipynb`** and **`LGBM-strategy2.ipynb`** - The respective code for Strategy 1 and Strategy 2.
 * **`res_lgbm_s1.csv`** and **`res_lgbm_s2.csv`** - The respective prediction result of `LGBM-strategy1.ipynb` and `LGBM-strategy2.ipynb`.
 * **`plot the predicted result.ipynb`** - Code for Fig. 2: analyze the relations between the predicted CO2 emissions and observed CO<sub>2</sub> emissions for each strategy.
@@ -64,13 +63,13 @@ Evaluate the importance of features and perform robustness analysis.
 * **`prediction with all historial data.ipynb`** - Code for Fig. 3d: predict CO<sub>2</sub> emissions with all history data.
 
 
-## 6.extrapolation
+## 6.Extrapolation
 In a consistent approach, we computed input data for predictive models for various countries by incorporating network features from their respective `mobility data`. The outcomes were then stored in the specified files. Subsequently, the data and predictive model were employed to generate the results in Fig. 4.
 * **`input_Italy.csv`**
 * **`input_Mexico.csv`**
 * **`input_USA_county.csv`**
 * **`input_USA_state.csv`**
 
-## 7.city clusters
+## 7.City clusters
 * **`city cluster- normal times.csv`** - The input data for `city cluster.ipynb`, includes total CO<sub>2</sub> emission data for cities, along with information about their respective urban clusters.
 * **`city cluster.ipynb`** - Code for Fig. 5: analyze the characteristics of human mobility and CO<sub>2</sub> emissions in urban clusters.
