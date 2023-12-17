@@ -26,11 +26,11 @@ Python packages versions are specified as follows:
 
 
 ## 1. CO<sub>2</sub> emissions data
-This dataset is sourced from the Global Gridded Daily CO2 Emissions Dataset (GRACED), accessible at https://carbonmonitor-graced.com/. This dataset supports the work in Scientific Data 7, 392 (2020), Nature Communication 11, 5172 (2020), The Innovation, 2022, 3(1) and Scientific Data 10, 69 (2023). GRACED has been processed to derive daily CO2 emission within distinct regional boundaries. [这里不同国家的区域划分单位请确认]
+This dataset is sourced from the Global Gridded Daily CO2 Emissions Dataset (GRACED), accessible at https://carbonmonitor-graced.com/. This dataset supports the work in Scientific Data 7, 392 (2020), Nature Communication 11, 5172 (2020), The Innovation, 2022, 3(1) and Scientific Data 10, 69 (2023). GRACED has been processed to derive daily CO2 emission within distinct regional boundaries. 
 * **China** - Mobility data of China: Collected between January 1 to February 29, 2020, this dataset is aggregated at the city level.
 * **Italy** - Mobility data of Italy: Encompassing the period from January 18 to June 26, 2020, this dataset captures aggregated origin-destination movements between various Italian provinces.
 * **Mexico** - Depicting travel patterns between municipalities in Mexico, this dataset covers the period from January 1 to December 31, 2020.
-* **USA-County** and **USA-State**- Mobility data of the U.S.: Covering the span from January 1 to February 15, 2020, this datasets provide valuable insights into population movement patterns at three geographical scales: census tract, county, and state.
+* **USA-County** and **USA-State** - Mobility data of the U.S.: Covering the span from January 1 to February 15, 2020, these datasets provide valuable insights into population movement patterns at county, and state respectively.
 
 ## 2. Mobility data
 Mobility data for China, Italy, Mexico, and the United States.
@@ -50,7 +50,7 @@ Result: Correlation between Human Mobility and CO<sub>2</sub> Emissions - Code E
 * **node** - Results of `calculatie node features.ipynb`, with the summary available in `node features.csv`.
 
 ## 4. Prediction
-Utilizing Strategy 1 and Strategy 2 to predict CO<sub>2</sub> emissions. For detailed information about the models and features, please refer to the main text.
+Utilizing Strategy 1 and Strategy 2 to predict CO<sub>2</sub> emissions. For detailed information, please refer to the paper.
 * **`LGBM-strategy1.ipynb`** and **`LGBM-strategy2.ipynb`** - The respective code for Strategy 1 and Strategy 2.
 * **`res_lgbm_s1.csv`** and **`res_lgbm_s2.csv`** - The respective prediction result of `LGBM-strategy1.ipynb` and `LGBM-strategy2.ipynb`.
 * **`plot the predicted result.ipynb`** - Code for Fig. 2: analyze the relations between the predicted CO2 emissions and observed CO<sub>2</sub> emissions for each strategy.
